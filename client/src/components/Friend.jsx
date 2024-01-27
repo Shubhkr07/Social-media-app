@@ -22,6 +22,8 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
   const isFriend = Array.from(friends).find((friend) => friend._id === friendId);
 
   const patchFriend = async () => {
+    console.log('clicked')
+    
     const response = await fetch(
       `http://localhost:3001/users/${_id}/${friendId}`,
       {
@@ -32,6 +34,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
         },
       }
     );
+    console.log(response);
     const data = await response.json();
     dispatch(setFriends({ friends: data }));
   };
@@ -57,7 +60,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
               },
             }}
           >
-            {name}
+            {name} 
           </Typography>
           <Typography color={medium} fontSize="0.75rem">
             {subtitle}
