@@ -20,8 +20,8 @@ import { users, posts } from "./data/index.js";
 
 // Configurations
 const allowedHosts = [
+    'https://social-media-app-drab-six.vercel.app/',
     'http://localhost:3000',
-    'https://social-media-app-drab-six.vercel.app/'
 ]
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
