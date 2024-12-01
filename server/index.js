@@ -20,7 +20,7 @@ import { users, posts } from "./data/index.js";
 
 // Configurations
 const allowedHosts = [
-    'https://social-media-app-drab-six.vercel.app/',
+    'https://social-media-app-qn3q.onrender.com/auth/register',
     'http://localhost:3000',
 ]
 const __filename = fileURLToPath(import.meta.url);
