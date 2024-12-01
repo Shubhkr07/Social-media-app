@@ -25,7 +25,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
     console.log('clicked')
     
     const response = await fetch(
-      `http://localhost:3001/users/${_id}/${friendId}`,
+      `https://social-media-app-qn3q.onrender.com/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {
